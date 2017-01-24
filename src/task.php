@@ -31,6 +31,11 @@
             return $_SESSION["list_of_tasks"];  // Returns a list of all the tasks
         }
 
+        static function deleteAll()
+        {
+            $_SESSION['list_of_tasks'] = array();
+        }
+
 
     }
 ?>
